@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNAF 3D - Jogo Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    
+    <div id="hud">
+        <div id="stats">
+            <div class="stat-item">
+                <span class="label">Posição:</span>
+                <span id="positionDisplay">X: 0 | Y: 0 | Z: 0</span>
+            </div>
+            <div class="stat-item">
+                <span class="label">Câmera:</span>
+                <span id="cameraDisplay">Rotação: 0°</span>
+            </div>
+            <div class="stat-item">
+                <span class="label">Velocidade:</span>
+                <span id="speedDisplay">0 m/s</span>
+            </div>
+        </div>
+        
+        <div id="controls-info">
+            <h3>Controles:</h3>
+            <p><strong>W/A/S/D</strong> - Movimento</p>
+            <p><strong>Mouse</strong> - Olhar ao redor</p>
+            <p><strong>SPACE</strong> - Pular</p>
+            <p><strong>SHIFT</strong> - Correr</p>
+            <p><strong>ESC</strong> - Menu</p>
+        </div>
+        
+        <div id="menu" class="hidden">
+            <h2>PAUSA</h2>
+            <button onclick="resumeGame()">Continuar</button>
+            <button onclick="restartGame()">Reiniciar</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
