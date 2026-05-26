@@ -1,0 +1,17 @@
+{
+  "name": "fnaf-3d-game",
+  "version": "1.0.0",
+  "description": "Jogo 3D interativo baseado em FNAF com movimento e controles",
+  "main": "game.js",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "npx http-server"
+  },
+  "dependencies": {
+    "three": "^r128"
+  },
+  "devDependencies": {},
+  "keywords": ["game", "3d", "fnaf", "interactive"],
+  "author": "Glight58",
+  "license": "MIT"
+}
